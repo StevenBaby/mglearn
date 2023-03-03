@@ -27,3 +27,9 @@ from .plot_nn_graphs import (
 )
 
 from .plot_scaling import plot_scaling
+
+from .plot_pca import (
+    plot_pca_illustration,
+    plot_pca_whitening,
+    plot_pca_faces,
+)
