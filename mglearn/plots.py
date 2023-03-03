@@ -15,3 +15,5 @@ from .plot_linear_svc_regularization import plot_linear_svc_regularization
 from .plot_animal_tree import plot_animal_tree
 
 from .plot_tree_nonmonotonous import plot_tree_not_monotone
+
+from .plot_interactive_tree import plot_tree_partition
