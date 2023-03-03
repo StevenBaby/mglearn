@@ -17,3 +17,5 @@ from .plot_animal_tree import plot_animal_tree
 from .plot_tree_nonmonotonous import plot_tree_not_monotone
 
 from .plot_interactive_tree import plot_tree_partition
+
+from .plot_rbf_svm_parameters import plot_svm
