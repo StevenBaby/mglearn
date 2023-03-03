@@ -11,3 +11,7 @@ from .plot_linear_regression import plot_linear_regression_wave
 from .plot_ridge import plot_ridge_n_samples
 
 from .plot_linear_svc_regularization import plot_linear_svc_regularization
+
+from .plot_animal_tree import plot_animal_tree
+
+from .plot_tree_nonmonotonous import plot_tree_not_monotone
