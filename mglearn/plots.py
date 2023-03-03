@@ -19,3 +19,9 @@ from .plot_tree_nonmonotonous import plot_tree_not_monotone
 from .plot_interactive_tree import plot_tree_partition
 
 from .plot_rbf_svm_parameters import plot_svm
+
+from .plot_nn_graphs import (
+    plot_logistic_regression_graph,
+    plot_single_hidden_layer_graph,
+    plot_two_hidden_layer_graph,
+)
