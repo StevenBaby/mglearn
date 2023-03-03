@@ -34,4 +34,12 @@ from .plot_pca import (
     plot_pca_faces,
 )
 
-from .plot_nmf import (plot_nmf_illustration, plot_nmf_faces)
+from .plot_nmf import (
+    plot_nmf_illustration,
+    plot_nmf_faces
+)
+
+from .plot_kmeans import (
+    plot_kmeans_algorithm,
+    plot_kmeans_boundaries,
+)
