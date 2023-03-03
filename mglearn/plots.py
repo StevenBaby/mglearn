@@ -25,3 +25,5 @@ from .plot_nn_graphs import (
     plot_single_hidden_layer_graph,
     plot_two_hidden_layer_graph,
 )
+
+from .plot_scaling import plot_scaling
