@@ -19,7 +19,8 @@ def plot_kmeans_algorithm():
     with mpl.rc_context(rc={'axes.prop_cycle': cycler('color', ['#0000aa',
                                                                 '#ff2020',
                                                                 '#50ff50'])}):
-        fig, axes = plt.subplots(3, 3, figsize=(10, 8), subplot_kw={'xticks': (), 'yticks': ()})
+        fig, axes = plt.subplots(3, 3, figsize=(10, 8), subplot_kw={
+                                 'xticks': (), 'yticks': ()})
         axes = axes.ravel()
         axes[0].set_title("Input data")
         discrete_scatter(X[:, 0], X[:, 1], ax=axes[0], markers=['o'], c='w')
@@ -79,7 +80,8 @@ def plot_kmeans_algorithm():
         discrete_scatter(centers[:, 0], centers[:, 1], [0, 1, 2],
                          ax=axes[7], markers=['^'], markeredgewidth=2)
         axes[8].set_axis_off()
-        axes[8].legend(markers, ["Cluster 0", "Cluster 1", "Cluster 2"], loc='best')
+        axes[8].legend(
+            markers, ["Cluster 0", "Cluster 1", "Cluster 2"], loc='best')
 
 
 def plot_kmeans_boundaries():
@@ -107,11 +109,13 @@ def plot_kmeans_faces(km, pca, X_pca, X_people, y_people, target_names):
         inds = np.argsort(dists)[:5]
         dists[~mask] = -np.inf
         inds = np.r_[inds, np.argsort(dists)[-5:]]
-        axes[cluster, 0].imshow(pca.inverse_transform(center).reshape(image_shape), vmin=0, vmax=1)
+        axes[cluster, 0].imshow(pca.inverse_transform(
+            center).reshape(image_shape), cmap=plt.cm.gray)
         for image, label, asdf, ax in zip(X_people[inds], y_people[inds],
                                           km.labels_[inds], axes[cluster, 1:]):
-            ax.imshow(image.reshape(image_shape), vmin=0, vmax=1)
-            ax.set_title("%s" % (target_names[label].split()[-1]), fontdict={'fontsize': 9})
+            ax.imshow(image.reshape(image_shape), cmap=plt.cm.gray)
+            ax.set_title(
+                "%s" % (target_names[label].split()[-1]), fontdict={'fontsize': 9})
 
     # add some boxes to illustrate which are similar and which dissimilar
     rec = plt.Rectangle([-5, -30], 73, 1295, fill=False, lw=2)

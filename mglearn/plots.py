@@ -42,9 +42,12 @@ from .plot_nmf import (
 from .plot_kmeans import (
     plot_kmeans_algorithm,
     plot_kmeans_boundaries,
+    plot_kmeans_faces
 )
 
 from .plot_agglomerative import (
     plot_agglomerative_algorithm,
     plot_agglomerative,
 )
+
+from .plot_dbscan import plot_dbscan
