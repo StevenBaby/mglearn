@@ -43,3 +43,8 @@ from .plot_kmeans import (
     plot_kmeans_algorithm,
     plot_kmeans_boundaries,
 )
+
+from .plot_agglomerative import (
+    plot_agglomerative_algorithm,
+    plot_agglomerative,
+)
