@@ -87,3 +87,12 @@ def make_signals():
     S /= S.std(axis=0)  # Standardize data
     S -= S.min()
     return S
+
+
+def load_citibike():
+    data_mine = pd.read_csv(os.path.join(DATA_FOLDER, "citibike.csv"))
+    data_mine['one'] = 1
+    data_mine['starttime'] = pd.to_datetime(data_mine.starttime)
+    data_starttime = data_mine.set_index("starttime")
+    data_resampled = data_starttime.resample("3h").sum().fillna(0)
+    return data_resampled.one
