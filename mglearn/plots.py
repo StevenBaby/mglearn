@@ -51,3 +51,11 @@ from .plot_agglomerative import (
 )
 
 from .plot_dbscan import plot_dbscan
+
+from .plot_cross_validation import (
+    plot_cross_validation,
+    plot_stratified_cross_validation,
+    plot_shuffle_split,
+    plot_threefold_split,
+    plot_label_kfold,
+)
