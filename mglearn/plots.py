@@ -70,3 +70,8 @@ from .plot_metrics import (
     plot_binary_confusion_matrix,
     plot_decision_threshold,
 )
+
+from .plot_improper_preprocessing import (
+    plot_improper_processing,
+    plot_proper_processing,
+)
