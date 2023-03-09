@@ -64,3 +64,9 @@ from .plot_grid_search import (
     plot_cross_val_selection,
     plot_grid_search_overview,
 )
+
+from .plot_metrics import (
+    plot_confusion_matrix_illustration,
+    plot_binary_confusion_matrix,
+    plot_decision_threshold,
+)
