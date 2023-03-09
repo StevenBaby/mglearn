@@ -59,3 +59,8 @@ from .plot_cross_validation import (
     plot_threefold_split,
     plot_label_kfold,
 )
+
+from .plot_grid_search import (
+    plot_cross_val_selection,
+    plot_grid_search_overview,
+)
